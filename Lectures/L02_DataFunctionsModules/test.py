@@ -1,16 +1,21 @@
-colors = {'red', 'green', 'blue'}       # {} - Задать множество
-print(type(colors))                     # type() - Вывести тип данных colors
+list1 = [1, 2, 3, 4, 5]
 
-colors.add('red')
-print(colors)
-colors.add('gray')
-print(colors)
-colors.remove('red')
-print(colors)
-# colors.remove('red')                    # Ошибка: 'red' уже нет в множестве
-colors.discard('red')
-print(colors)
-colors.discard('gray')
-print(colors)
-colors.clear()
-print(colors)
+print(len(list1))
+print(list1.pop())
+print(list1)
+print(list1.pop())
+print(list1)
+print(list1.pop())
+print(list1)
+
+list1 = [1, 2, 3, 4, 5]
+
+print(list1.pop(2))
+print(list1)
+
+list1 = [1, 2, 3, 4, 5]
+
+print(list1.append(11))
+print(list1)
+print(list1.insert(2, 11))
+print(list1)
