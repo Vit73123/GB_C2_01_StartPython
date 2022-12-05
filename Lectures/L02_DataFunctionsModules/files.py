@@ -18,7 +18,7 @@ data = open('file.txt', 'a')
 data.writelines(colors)             # Разделителей не будет
 data.close()
 
-# wiwth open() as data
+# with open() as data
 # Файл закрывает автоматически по выходу из блока with. Можно вручную закрывать не надо
 
 with open('file.txt', 'w') as data:
