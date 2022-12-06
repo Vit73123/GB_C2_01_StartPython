@@ -5,5 +5,16 @@
 # Ввод: 1 2 3 2 4 4
 # Вывод: 1 3
 
+from collections import Counter
+
 lst = [int(num) for num in input("Введите числа через пробел: ").split()]
+
+# 
+c = Counter(lst)
+for l in lst:
+    if c[l] == 1:
+        print(l)
+
+# Вывод всех уникальных значений - неверное решение
+# Требовалось: вывод только тех значений, которых списке только по 1 элементу
 print(set(lst))
