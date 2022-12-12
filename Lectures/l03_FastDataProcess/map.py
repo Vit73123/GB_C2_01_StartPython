@@ -38,3 +38,27 @@ print('--')
 
 for e in data:
     print(e)
+
+# map ваыполняет ту же работу, что и # пользовательская функция select,
+# т.е. вместо select можно использовать map
+
+def select(f, col):
+    return [f(x) for x in col]
+
+def where(f, col):
+    return [x for x in col if f(x)]
+
+data = '1 2 3 4 5 8 15 23 38'.split()
+
+res = map(int, data)
+res = where(lambda x: not x % 2, res)
+
+print("\select\n")
+# res = select(lambda x: (x, x ** 2), res)            # lambda функция для построения списка пар (x, x^2), где x - чётные
+# print(res)
+# аналогично:
+res = list(map(lambda x: (x, x ** 2), res))         # map вместо пользовательской функции select
+
+print("\nmap вместо select\n")
+
+print(res)
