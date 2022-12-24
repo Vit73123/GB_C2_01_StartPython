@@ -7,8 +7,8 @@ from telegram.ext import    Updater,\
                             ApplicationBuilder    #, ContextTypes
 from random import randint as rnd
 
-# bot = Bot(token = '5937698617:AAFTiaXrR1aRaXxv-hfusisigtDZE45hIaA')
-# updater = Updater(token = '5937698617:AAFTiaXrR1aRaXxv-hfusisigtDZE45hIaA')
+# bot = Bot(token = 'TOKEN')
+# updater = Updater(token = 'TOKEN')
 # dispatcher = updater.dispatcher
 dispatcher = ApplicationBuilder().token("TOKEN").build()
 
