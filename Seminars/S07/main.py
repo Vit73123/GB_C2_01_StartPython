@@ -1,8 +1,7 @@
-import interfaсe as c
+import interface as c
 
-def foooo():
+def main():
     c.button_click()
 
-
 if __name__ == '__main__':
-    foooo()
+    main()
